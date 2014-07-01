@@ -1,55 +1,210 @@
-@charset "utf-8";
+/* line 2, /Users/coreyhaggard/rubie/source/stylesheets/neat/grid/_grid.scss */
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box; }
 
+/* line 3, /Users/coreyhaggard/rubie/source/stylesheets/bitters/_typography.scss */
 body {
-  background: #d4d4d4 url("../images/background.png");
-  text-align: center;
-  font-family: sans-serif; }
+  color: #333333;
+  font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 1em;
+  -webkit-font-smoothing: antialiased;
+  line-height: 1.5em; }
 
+/* line 11, /Users/coreyhaggard/rubie/source/stylesheets/bitters/_typography.scss */
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  line-height: 1.25em;
+  margin: 0;
+  text-rendering: optimizeLegibility; }
+
+/* line 18, /Users/coreyhaggard/rubie/source/stylesheets/bitters/_typography.scss */
 h1 {
-  color: rgba(0, 0, 0, .3);
-  font-weight: bold;
-  font-size: 32px;
-  letter-spacing: -1px;
+  font-size: 2.75em;
+  font-weight: 300;
+  display: block; }
+
+/* line 24, /Users/coreyhaggard/rubie/source/stylesheets/bitters/_typography.scss */
+h2 {
+  font-size: 2em; }
+  /* line 26, /Users/coreyhaggard/rubie/source/stylesheets/bitters/_typography.scss */
+  h2.small {
+    text-transform: uppercase;
+    font-size: 1em;
+    font-weight: 800;
+    margin-bottom: 1em; }
+
+/* line 34, /Users/coreyhaggard/rubie/source/stylesheets/bitters/_typography.scss */
+h3 {
+  font-size: 1.5em;
+  font-family: "Belgrano", serif;
+  font-weight: 300;
+  line-height: 1.4em; }
+
+/* line 41, /Users/coreyhaggard/rubie/source/stylesheets/bitters/_typography.scss */
+h4 {
   text-transform: uppercase;
-  text-shadow: 0 1px 0 rgba(255, 255, 255, .5);
-  background: url("../images/middleman.png") no-repeat center 100px;
-  padding: 350px 0 10px;
-  margin: 0; }
+  background-color: white;
+  color: black;
+  padding: .3em .7em;
+  margin-bottom: 4em;
+  margin-top: 5em;
+  font-weight: 800;
+  font-size: 0.7em;
+  display: inline-block; }
 
-.doc {
-  font-size: 14px;
-  margin: 0; }
-  .doc:before,
-  .doc:after {
-    opacity: .2;
-    padding: 6px;
-    font-style: normal;
-    position: relative;
-    content: "•"; }
-  .doc a {
-    color: rgba(0, 0, 0, 0.3); }
-    .doc a:hover {
-      color: #666; }
+/* line 54, /Users/coreyhaggard/rubie/source/stylesheets/bitters/_typography.scss */
+h5 {
+  font-size: 1.25em; }
 
-.welcome {
-  -webkit-animation-name: welcome;
-  -webkit-animation-duration: .9s; }
+/* line 58, /Users/coreyhaggard/rubie/source/stylesheets/bitters/_typography.scss */
+h6 {
+  font-size: 1em; }
 
-@-webkit-keyframes welcome {
-  from {
-    -webkit-transform: scale(0);
-    opacity: 0;
-  }
-  50% {
-   -webkit-transform: scale(0);
-   opacity: 0;
-  }
-  82.5% {
-    -webkit-transform: scale(1.03);
-    -webkit-animation-timing-function: ease-out;
-    opacity: 1;
-  }
-  to {
-    -webkit-transform: scale(1);
-  }
-}
+/* line 62, /Users/coreyhaggard/rubie/source/stylesheets/bitters/_typography.scss */
+p {
+  margin: 0 0 0.75em; }
+
+/* line 66, /Users/coreyhaggard/rubie/source/stylesheets/bitters/_typography.scss */
+a {
+  color: #319fce;
+  text-decoration: none;
+  -webkit-transition: color 0.1s linear;
+  -moz-transition: color 0.1s linear;
+  transition: color 0.1s linear; }
+  /* line 71, /Users/coreyhaggard/rubie/source/stylesheets/bitters/_typography.scss */
+  a:hover {
+    color: #2ea9de; }
+  /* line 75, /Users/coreyhaggard/rubie/source/stylesheets/bitters/_typography.scss */
+  a:active, a:focus {
+    color: #2ea9de;
+    outline: none; }
+
+/* line 81, /Users/coreyhaggard/rubie/source/stylesheets/bitters/_typography.scss */
+hr {
+  border-bottom: 1px solid #f0f0f0;
+  border-left: none;
+  border-right: none;
+  border-top: none;
+  margin: 1.5em 0; }
+
+/* line 89, /Users/coreyhaggard/rubie/source/stylesheets/bitters/_typography.scss */
+img {
+  margin: 0;
+  max-width: 100%; }
+
+/* line 94, /Users/coreyhaggard/rubie/source/stylesheets/bitters/_typography.scss */
+abbr, acronym {
+  border-bottom: 1px dotted #f0f0f0;
+  cursor: help; }
+
+/* line 99, /Users/coreyhaggard/rubie/source/stylesheets/bitters/_typography.scss */
+address {
+  display: block;
+  margin: 0 0 0.75em; }
+
+/* line 104, /Users/coreyhaggard/rubie/source/stylesheets/bitters/_typography.scss */
+hgroup {
+  margin-bottom: 0.75em; }
+
+/* line 108, /Users/coreyhaggard/rubie/source/stylesheets/bitters/_typography.scss */
+del {
+  color: #595959; }
+
+/* line 112, /Users/coreyhaggard/rubie/source/stylesheets/bitters/_typography.scss */
+blockquote {
+  border-left: 2px solid #f0f0f0;
+  color: #595959;
+  margin: 1.5em 0;
+  padding-left: 0.75em; }
+
+/* line 119, /Users/coreyhaggard/rubie/source/stylesheets/bitters/_typography.scss */
+cite {
+  color: #737373;
+  font-style: italic; }
+  /* line 123, /Users/coreyhaggard/rubie/source/stylesheets/bitters/_typography.scss */
+  cite:before {
+    content: '\2014 \00A0'; }
+
+/* line 1, /Users/coreyhaggard/rubie/source/stylesheets/bitters/_tables.scss */
+table {
+  border-collapse: collapse;
+  margin: 0.75em 0;
+  table-layout: fixed;
+  width: 100%; }
+
+/* line 8, /Users/coreyhaggard/rubie/source/stylesheets/bitters/_tables.scss */
+th {
+  border-bottom: 1px solid #cacaca;
+  font-weight: bold;
+  padding: 0.75em 0;
+  text-align: left; }
+
+/* line 15, /Users/coreyhaggard/rubie/source/stylesheets/bitters/_tables.scss */
+td {
+  border-bottom: 1px solid #f0f0f0;
+  padding: 0.75em 0; }
+
+/* line 20, /Users/coreyhaggard/rubie/source/stylesheets/bitters/_tables.scss */
+tr, td, th {
+  vertical-align: middle; }
+
+/* line 1, /Users/coreyhaggard/rubie/source/stylesheets/bitters/_lists.scss */
+ul, ol {
+  margin: 0;
+  padding: 0;
+  list-style-type: none; }
+/* line 19, /Users/coreyhaggard/rubie/source/stylesheets/bitters/_lists.scss */
+dl {
+  line-height: 1.5em;
+  margin-bottom: 0.75em; }
+  /* line 23, /Users/coreyhaggard/rubie/source/stylesheets/bitters/_lists.scss */
+  dl dt {
+    font-weight: bold;
+    margin-top: 0.75em; }
+  /* line 28, /Users/coreyhaggard/rubie/source/stylesheets/bitters/_lists.scss */
+  dl dd {
+    margin: 0; }
+
+/* line 1, /Users/coreyhaggard/rubie/source/stylesheets/bitters/_flashes.scss */
+.error, #flash_failure {
+  background: #fbe3e4;
+  color: #96151b;
+  font-weight: bold;
+  margin-bottom: 0.75em;
+  padding: 0.75em; }
+  /* line 8, /Users/coreyhaggard/rubie/source/stylesheets/bitters/mixins/_flash.scss */
+  .error a, #flash_failure a {
+    color: #6a0f13; }
+    /* line 11, /Users/coreyhaggard/rubie/source/stylesheets/bitters/mixins/_flash.scss */
+    .error a:hover, #flash_failure a:hover {
+      color: #110203; }
+
+/* line 5, /Users/coreyhaggard/rubie/source/stylesheets/bitters/_flashes.scss */
+.notice, #flash_notice {
+  background: #fff6bf;
+  color: #8c7800;
+  font-weight: bold;
+  margin-bottom: 0.75em;
+  padding: 0.75em; }
+  /* line 8, /Users/coreyhaggard/rubie/source/stylesheets/bitters/mixins/_flash.scss */
+  .notice a, #flash_notice a {
+    color: #594c00; }
+    /* line 11, /Users/coreyhaggard/rubie/source/stylesheets/bitters/mixins/_flash.scss */
+    .notice a:hover, #flash_notice a:hover {
+      color: black; }
+
+/* line 9, /Users/coreyhaggard/rubie/source/stylesheets/bitters/_flashes.scss */
+.success, #flash_success {
+  background: #e6efc2;
+  color: #56651a;
+  font-weight: bold;
+  margin-bottom: 0.75em;
+  padding: 0.75em; }
+  /* line 8, /Users/coreyhaggard/rubie/source/stylesheets/bitters/mixins/_flash.scss */
+  .success a, #flash_success a {
+    color: #333c10; }
+    /* line 11, /Users/coreyhaggard/rubie/source/stylesheets/bitters/mixins/_flash.scss */
+    .success a:hover, #flash_success a:hover {
+      color: black; }
