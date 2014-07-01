@@ -211,7 +211,7 @@ dl {
 
 /* line 3, /Users/coreyhaggard/rubie/source/stylesheets/_homepage.scss */
 .background {
-  background: url("/images/site-background.png") no-repeat top left;
+  background: url("../images/site-background.png") no-repeat top left;
   background-size: cover; }
   /* line 7, /Users/coreyhaggard/rubie/source/stylesheets/_homepage.scss */
   .background .inner {
@@ -243,25 +243,29 @@ dl {
       font-size: 45px;
       color: white;
       padding-bottom: 10px; }
-    /* line 28, /Users/coreyhaggard/rubie/source/stylesheets/_homepage.scss */
+      @media screen and (max-width: 33.75em) {
+        /* line 21, /Users/coreyhaggard/rubie/source/stylesheets/_homepage.scss */
+        .background .inner h2 {
+          display: none; } }
+    /* line 32, /Users/coreyhaggard/rubie/source/stylesheets/_homepage.scss */
     .background .inner p {
       font-family: 'Open Sans', sans-serif;
       font-size: 22px;
       color: #DE94C1; }
-    /* line 34, /Users/coreyhaggard/rubie/source/stylesheets/_homepage.scss */
+    /* line 38, /Users/coreyhaggard/rubie/source/stylesheets/_homepage.scss */
     .background .inner .button {
       margin: 60px 0; }
-    /* line 38, /Users/coreyhaggard/rubie/source/stylesheets/_homepage.scss */
+    /* line 42, /Users/coreyhaggard/rubie/source/stylesheets/_homepage.scss */
     .background .inner .product {
       position: absolute;
       bottom: 0;
       padding-left: 20px; }
-      /* line 43, /Users/coreyhaggard/rubie/source/stylesheets/_homepage.scss */
+      /* line 47, /Users/coreyhaggard/rubie/source/stylesheets/_homepage.scss */
       .background .inner .product img {
         position: relative;
         bottom: -6px;
         width: 100%; }
         @media screen and (max-width: 90.625em) {
-          /* line 43, /Users/coreyhaggard/rubie/source/stylesheets/_homepage.scss */
+          /* line 47, /Users/coreyhaggard/rubie/source/stylesheets/_homepage.scss */
           .background .inner .product img {
             max-width: 80%; } }
