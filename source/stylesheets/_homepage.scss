@@ -23,6 +23,10 @@ $center: 0 auto;
       font-size: 45px;
       color: white;
       padding-bottom: 10px;
+
+      @include media($small-screen) {
+        display: none;
+      }
     }
 
     p {
