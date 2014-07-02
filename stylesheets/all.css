@@ -211,7 +211,7 @@ dl {
 
 /* line 3, /Users/coreyhaggard/rubie/source/stylesheets/_homepage.scss */
 .background {
-  background: url("/images/site-background.png") no-repeat top left;
+  background: url("../images/site-background.png") no-repeat top left;
   background-size: cover; }
   /* line 7, /Users/coreyhaggard/rubie/source/stylesheets/_homepage.scss */
   .background .inner {
@@ -264,7 +264,7 @@ dl {
           font-size: 17px; } }
     /* line 47, /Users/coreyhaggard/rubie/source/stylesheets/_homepage.scss */
     .background .inner .button {
-      margin: 60px 0; }
+      margin: 40px 0; }
       @media screen and (max-width: 33.75em) {
         /* line 47, /Users/coreyhaggard/rubie/source/stylesheets/_homepage.scss */
         .background .inner .button {
