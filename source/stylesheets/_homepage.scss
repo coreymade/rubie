@@ -1,77 +1,71 @@
 $center: 0 auto;
 
-.background {
+body {
   background: image-url('site-background.png') no-repeat top left;
   background-size: cover;
+}
 
-  .inner {
-    @include outer-container;
-    padding-top: 10%;
+.inner-content {
+  @include outer-container;
+  padding-top: 5%;
 
-    @include media($large-screen) {
-      padding-top: 55px;
-      width: 100%;
-    }
+  h2 {
+    color: #fff;
+    font-family: 'Varela Round', sans-serif;
+    text-align: center;
+    font-size: 55px;
+    margin-bottom: 20px;
 
-    .wrapper {
-      @include size (470 auto);
-      margin: $center;
-      text-align: center;
-
-      @include media($small-screen) {
-        @include size (200 auto);
-      }
-    }
-
-    h2 {
-      font-family: 'Varela Round', sans-serif;
+    &.sub-heading {
       font-size: 45px;
-      color: white;
-      padding-bottom: 10px;
-
-      @include media($small-screen) {
-        font-size: 30px;
-      }
     }
+  }
 
-    p {
-      font-family: 'Open Sans', sans-serif;
-      font-size: 22px;
-      color: #DE94C1;
+  .site-intro {
+    @include body-copy;
+    font-size: 28px;
+  }
 
-      @include media($small-screen) {
-        font-size: 17px;
-      }
+  .button {
+    @include size (393 auto);
+    margin: $center;
+    margin-top: 70px;
+
+    &.bottom {
+      margin-top: -175px;
     }
+  }
 
-    .button {
-      margin: 40px 0;
+  .product-shot {
+    @include size (434 auto);
+    margin: $center;
+    position: relative;
+    bottom: 0;
+  }
 
-      @include media($small-screen) {
-        width: 100%;
-        margin: $center;
-        margin-top: 20px;
-      }
-    }
+  p {
+    @include size (831 auto);
+    @include body-copy;
+    margin: $center;
+    font-size: 21px;
+  }
 
-    .product {
-      position: absolute;
-      bottom: 0;
-      padding-left: 20px;
+  .rubies {
+    @include size (777 auto);
+    margin: $center;
+    margin-top: 100px;
+    margin-bottom: 100px;
+  }
 
-      img {
-        position: relative;
-        bottom: -6px;
-        width: 100%;
+  .game-shot {
+    @include size (934 auto);
+    margin: $center;
+    margin-top: 100px;
+    margin-bottom: 100px;
+  }
 
-        @include media($large-screen) {
-          max-width: 80%;
-        }
-
-        @include media($small-screen) {
-          margin-left: -75px;
-        }
-      }
-    }
+  .highscores {
+    margin: $center;
+    margin-top: 100px;
   }
 }
