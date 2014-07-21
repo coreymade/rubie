@@ -210,82 +210,205 @@ dl {
       color: black; }
 
 /* line 3, /Users/coreyhaggard/rubie/source/stylesheets/_homepage.scss */
-.background {
-  background: url("../images/site-background.png") no-repeat top left;
-  background-size: cover; }
-  /* line 7, /Users/coreyhaggard/rubie/source/stylesheets/_homepage.scss */
-  .background .inner {
-    *zoom: 1;
-    max-width: 87.5em;
-    margin-left: auto;
-    margin-right: auto;
-    padding-top: 10%; }
-    /* line 18, /Users/coreyhaggard/rubie/source/stylesheets/bourbon/addons/_clearfix.scss */
-    .background .inner:before, .background .inner:after {
-      content: " ";
-      display: table; }
-    /* line 23, /Users/coreyhaggard/rubie/source/stylesheets/bourbon/addons/_clearfix.scss */
-    .background .inner:after {
-      clear: both; }
-    @media screen and (max-width: 90.625em) {
-      /* line 7, /Users/coreyhaggard/rubie/source/stylesheets/_homepage.scss */
-      .background .inner {
-        padding-top: 55px;
-        width: 100%; } }
-    /* line 16, /Users/coreyhaggard/rubie/source/stylesheets/_homepage.scss */
-    .background .inner .wrapper {
-      width: 470px;
-      height: auto;
-      margin: 0 auto;
-      text-align: center; }
-      @media screen and (max-width: 33.75em) {
-        /* line 16, /Users/coreyhaggard/rubie/source/stylesheets/_homepage.scss */
-        .background .inner .wrapper {
-          width: 200px;
-          height: auto; } }
-    /* line 26, /Users/coreyhaggard/rubie/source/stylesheets/_homepage.scss */
-    .background .inner h2 {
-      font-family: 'Varela Round', sans-serif;
-      font-size: 45px;
-      color: white;
-      padding-bottom: 10px; }
-      @media screen and (max-width: 33.75em) {
-        /* line 26, /Users/coreyhaggard/rubie/source/stylesheets/_homepage.scss */
-        .background .inner h2 {
-          font-size: 30px; } }
-    /* line 37, /Users/coreyhaggard/rubie/source/stylesheets/_homepage.scss */
-    .background .inner p {
-      font-family: 'Open Sans', sans-serif;
-      font-size: 22px;
-      color: #DE94C1; }
-      @media screen and (max-width: 33.75em) {
-        /* line 37, /Users/coreyhaggard/rubie/source/stylesheets/_homepage.scss */
-        .background .inner p {
-          font-size: 17px; } }
-    /* line 47, /Users/coreyhaggard/rubie/source/stylesheets/_homepage.scss */
-    .background .inner .button {
-      margin: 40px 0; }
-      @media screen and (max-width: 33.75em) {
-        /* line 47, /Users/coreyhaggard/rubie/source/stylesheets/_homepage.scss */
-        .background .inner .button {
-          width: 100%;
-          margin: 0 auto;
-          margin-top: 20px; } }
-    /* line 57, /Users/coreyhaggard/rubie/source/stylesheets/_homepage.scss */
-    .background .inner .product {
-      position: absolute;
-      bottom: 0;
-      padding-left: 20px; }
-      /* line 62, /Users/coreyhaggard/rubie/source/stylesheets/_homepage.scss */
-      .background .inner .product img {
-        position: relative;
-        bottom: -6px;
-        width: 100%; }
-        @media screen and (max-width: 90.625em) {
-          /* line 62, /Users/coreyhaggard/rubie/source/stylesheets/_homepage.scss */
-          .background .inner .product img {
-            max-width: 80%; } }
-        @media screen and (max-width: 33.75em) {
-          /* line 62, /Users/coreyhaggard/rubie/source/stylesheets/_homepage.scss */
-          .background .inner .product img {
-            margin-left: -75px; } }
+body {
+  background-color: #2e2f40;
+  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #2e2f40), color-stop(100%, #402543));
+  background-image: -webkit-linear-gradient(-400deg, #2e2f40, #402543);
+  background-image: linear-gradient(130deg,#2e2f40, #402543); }
+
+/* line 7, /Users/coreyhaggard/rubie/source/stylesheets/_homepage.scss */
+.main {
+  background-color: #2e2f40;
+  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #2e2f40), color-stop(100%, #402543));
+  background-image: -webkit-linear-gradient(-360deg, #2e2f40, #402543);
+  background-image: linear-gradient(90deg,#2e2f40, #402543); }
+
+/* line 11, /Users/coreyhaggard/rubie/source/stylesheets/_homepage.scss */
+section {
+  background-color: #2e2f40;
+  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #2e2f40), color-stop(100%, #402543));
+  background-image: -webkit-linear-gradient(-360deg, #2e2f40, #402543);
+  background-image: linear-gradient(90deg,#2e2f40, #402543); }
+  /* line 14, /Users/coreyhaggard/rubie/source/stylesheets/_homepage.scss */
+  section.top {
+    background: none; }
+
+/* line 19, /Users/coreyhaggard/rubie/source/stylesheets/_homepage.scss */
+#video-bg {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  width: auto;
+  min-width: 100%;
+  height: auto;
+  min-height: 100%;
+  z-index: -100;
+  opacity: 0.09; }
+
+/* line 31, /Users/coreyhaggard/rubie/source/stylesheets/_homepage.scss */
+.inner-content {
+  *zoom: 1;
+  max-width: 68.75em;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 5%; }
+  /* line 18, /Users/coreyhaggard/rubie/source/stylesheets/bourbon/addons/_clearfix.scss */
+  .inner-content:before, .inner-content:after {
+    content: " ";
+    display: table; }
+  /* line 23, /Users/coreyhaggard/rubie/source/stylesheets/bourbon/addons/_clearfix.scss */
+  .inner-content:after {
+    clear: both; }
+  /* line 35, /Users/coreyhaggard/rubie/source/stylesheets/_homepage.scss */
+  .inner-content.top-content {
+    padding-top: 200px; }
+  /* line 39, /Users/coreyhaggard/rubie/source/stylesheets/_homepage.scss */
+  .inner-content h2 {
+    color: #fff;
+    font-family: 'Varela Round', sans-serif;
+    text-align: center;
+    font-size: 45px;
+    margin-bottom: 20px; }
+    /* line 46, /Users/coreyhaggard/rubie/source/stylesheets/_homepage.scss */
+    .inner-content h2.sub-heading {
+      font-size: 35px; }
+  /* line 51, /Users/coreyhaggard/rubie/source/stylesheets/_homepage.scss */
+  .inner-content .site-intro {
+    color: #DE94C1;
+    line-height: 33px;
+    text-align: center;
+    font-size: 28px; }
+  /* line 56, /Users/coreyhaggard/rubie/source/stylesheets/_homepage.scss */
+  .inner-content .button {
+    width: 393px;
+    height: auto;
+    margin: 0 auto;
+    margin-top: 70px; }
+    /* line 61, /Users/coreyhaggard/rubie/source/stylesheets/_homepage.scss */
+    .inner-content .button.bottom {
+      margin-top: -175px; }
+  /* line 66, /Users/coreyhaggard/rubie/source/stylesheets/_homepage.scss */
+  .inner-content .product-shot {
+    width: 434px;
+    height: auto;
+    margin: 0 auto;
+    position: relative;
+    bottom: 0; }
+  /* line 73, /Users/coreyhaggard/rubie/source/stylesheets/_homepage.scss */
+  .inner-content p {
+    width: 831px;
+    height: auto;
+    color: #DE94C1;
+    line-height: 33px;
+    text-align: center;
+    margin: 0 auto;
+    font-size: 18px; }
+  /* line 80, /Users/coreyhaggard/rubie/source/stylesheets/_homepage.scss */
+  .inner-content .rubies {
+    width: 750px;
+    height: auto;
+    margin: 0 auto; }
+  /* line 85, /Users/coreyhaggard/rubie/source/stylesheets/_homepage.scss */
+  .inner-content .game-shot {
+    width: 750px;
+    height: auto;
+    margin: 0 auto;
+    margin-top: 100px;
+    margin-bottom: 25px; }
+  /* line 92, /Users/coreyhaggard/rubie/source/stylesheets/_homepage.scss */
+  .inner-content .highscores {
+    margin: 0 auto; }
+
+/* line 1, /Users/coreyhaggard/rubie/source/stylesheets/_scroller.scss */
+body, html {
+  margin: 0;
+  overflow: hidden;
+  -webkit-transition: opacity 400ms;
+  -moz-transition: opacity 400ms;
+  transition: opacity 400ms; }
+
+/* line 9, /Users/coreyhaggard/rubie/source/stylesheets/_scroller.scss */
+body, .onepage-wrapper, html {
+  display: block;
+  position: static;
+  padding: 0;
+  width: 100%;
+  height: 100%; }
+
+/* line 17, /Users/coreyhaggard/rubie/source/stylesheets/_scroller.scss */
+.onepage-wrapper {
+  width: 100%;
+  height: 100%;
+  display: block;
+  position: relative;
+  padding: 0;
+  -webkit-transform-style: preserve-3d; }
+
+/* line 26, /Users/coreyhaggard/rubie/source/stylesheets/_scroller.scss */
+.onepage-wrapper .section {
+  width: 100%;
+  height: 100%; }
+
+/* line 31, /Users/coreyhaggard/rubie/source/stylesheets/_scroller.scss */
+.onepage-pagination {
+  position: absolute;
+  right: 60px;
+  top: 47%;
+  z-index: 5;
+  list-style: none;
+  margin: 0;
+  padding: 0; }
+
+/* line 40, /Users/coreyhaggard/rubie/source/stylesheets/_scroller.scss */
+.onepage-pagination li {
+  padding: 0;
+  text-align: center; }
+
+/* line 44, /Users/coreyhaggard/rubie/source/stylesheets/_scroller.scss */
+.onepage-pagination li a {
+  padding: 10px;
+  width: 4px;
+  height: 34px;
+  display: block; }
+
+/* line 51, /Users/coreyhaggard/rubie/source/stylesheets/_scroller.scss */
+.onepage-pagination li a:before {
+  content: '';
+  position: absolute;
+  width: 19px;
+  height: 19px;
+  border: 2px solid #C5666F;
+  border-radius: 60px; }
+
+/* line 60, /Users/coreyhaggard/rubie/source/stylesheets/_scroller.scss */
+.onepage-pagination li a.active:before {
+  width: 19px;
+  height: 19px;
+  background: url("/images/active.png") no-repeat 5px 5px;
+  border: 2px solid #C5666F; }
+
+/* line 67, /Users/coreyhaggard/rubie/source/stylesheets/_scroller.scss */
+.disabled-onepage-scroll, .disabled-onepage-scroll .wrapper {
+  overflow: auto; }
+
+/* line 71, /Users/coreyhaggard/rubie/source/stylesheets/_scroller.scss */
+.disabled-onepage-scroll .onepage-wrapper .section {
+  position: relative !important;
+  top: auto !important;
+  left: auto !important; }
+
+/* line 76, /Users/coreyhaggard/rubie/source/stylesheets/_scroller.scss */
+.disabled-onepage-scroll .onepage-wrapper {
+  -webkit-transform: none !important;
+  -moz-transform: none !important;
+  transform: none !important;
+  -ms-transform: none !important;
+  min-height: 100%; }
+
+/* line 85, /Users/coreyhaggard/rubie/source/stylesheets/_scroller.scss */
+.disabled-onepage-scroll .onepage-pagination {
+  display: none; }
+
+/* line 89, /Users/coreyhaggard/rubie/source/stylesheets/_scroller.scss */
+body.disabled-onepage-scroll, .disabled-onepage-scroll .onepage-wrapper, html {
+  position: inherit; }
