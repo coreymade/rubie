@@ -30,8 +30,8 @@ body, .onepage-wrapper, html {
 
 .onepage-pagination {
   position: absolute;
-  right: 10px;
-  top: 50%;
+  right: 60px;
+  top: 47%;
   z-index: 5;
   list-style: none;
   margin: 0;
@@ -44,28 +44,24 @@ body, .onepage-wrapper, html {
 .onepage-pagination li a{
   padding: 10px;
   width: 4px;
-  height: 4px;
+  height: 34px;
   display: block;
 
 }
 .onepage-pagination li a:before{
   content: '';
   position: absolute;
-  width: 4px;
-  height: 4px;
-  background: rgba(0,0,0,0.85);
-  border-radius: 10px;
-  -webkit-border-radius: 10px;
-  -moz-border-radius: 10px;
+  width: 19px;
+  height: 19px;
+  border: 2px solid #C5666F;
+  border-radius: 60px;
 }
 
 .onepage-pagination li a.active:before{
-  width: 10px;
-  height: 10px;
-  background: none;
-  border: 1px solid black;
-  margin-top: -4px;
-  left: 8px;
+  width: 19px;
+  height: 19px;
+  background: image-url('active.png') no-repeat 5px 5px;
+  border: 2px solid #C5666F;
 }
 
 .disabled-onepage-scroll, .disabled-onepage-scroll .wrapper {

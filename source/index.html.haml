@@ -3,13 +3,16 @@
     %video#video-bg{:autoplay => "", :loop => "", :muted => "", :poster => "vid-first-frame.jpg"}
       %source{:src => "video.webm", :type => "video/webm"}
         %source{:src => "video.mp4", :type => "video/mp4"}
-    .inner-content
+    .inner-content.top-content
       %h2
         Meet Rubie
       .site-intro
         A fun addictive game of connections
+
       .button
-        =image_tag 'coming-soon.png'
+        %a{:href => "https://itunes.apple.com/us/app/rubie/id892911975?ls=1&mt=8"}
+          =image_tag 'coming-soon.png'
+
   / %section
   /   .inner-content
   /     %h2.sub-heading

@@ -25,12 +25,16 @@ section {
   height: auto;
   min-height: 100%;
   z-index: -100;
-  opacity: 0.05;
+  opacity: 0.09;
 }
 
 .inner-content {
   @include outer-container;
   padding-top: 5%;
+
+  &.top-content {
+    padding-top: 200px;
+  }
 
   h2 {
     color: #fff;
