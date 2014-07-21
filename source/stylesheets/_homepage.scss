@@ -26,6 +26,10 @@ section {
   min-height: 100%;
   z-index: -100;
   opacity: 0.09;
+
+  @include media ($small-screen) {
+    display: none;
+  }
 }
 
 .inner-content {
@@ -34,6 +38,10 @@ section {
 
   &.top-content {
     padding-top: 200px;
+
+    @include media ($small-screen) {
+      padding-top: 100px;
+    }
   }
 
   h2 {
@@ -93,3 +101,30 @@ section {
     margin: $center;
   }
 }
+
+@include media ($small-screen) {
+    .button {
+      img {
+        width: 77%;
+        margin-left: 10px;
+      }
+    }
+
+    .game-shot {
+      display: none;
+    }
+
+    .highscores {
+      display: none;
+    }
+
+    .inner-content {
+      h2 {
+        padding-top: 45px;
+      }
+    }
+
+      p {
+        width: 300px !important;
+      }
+    }
